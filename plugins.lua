@@ -22,6 +22,13 @@ local plugins = {
     },
   },
   {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require "plugins.configs.lspconfig"
+      require "custom.configs.lspconfig"
+    end
+  },
+  {
     "nvim-tree/nvim-tree.lua",
     lazy = false,
     opts = {
@@ -39,6 +46,21 @@ local plugins = {
             git = true,
           },
         },
+      },
+    },
+  },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        -- LSP
+        "lua-language-server",
+        "marksman",
+        "rust-analyzer",
+        "yaml-language-server",
+
+        -- Formater
+        "rustfmt",
       },
     },
   },
