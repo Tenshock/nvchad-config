@@ -93,6 +93,9 @@ local plugins = {
       "DapToggleRepl",
       "DapContinue",
     },
+    config = function()
+      require "custom.configs.nvimdap"
+    end,
   },
   {
     "rcarriga/nvim-dap-ui",
