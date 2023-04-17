@@ -58,6 +58,7 @@ local plugins = {
         "marksman",
         "rust-analyzer",
         "yaml-language-server",
+        "jdtls",
 
         -- DAP
         "codelldb",

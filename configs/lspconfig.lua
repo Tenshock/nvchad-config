@@ -7,6 +7,7 @@ local lspconfig = require "lspconfig"
 local servers_default = {
   "lua_ls",
   "marksman",
+  "jdtls",
   "rust_analyzer",
   "yamlls",
 }
