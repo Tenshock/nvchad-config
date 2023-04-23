@@ -27,6 +27,7 @@ local sources = {
   },
 
   lint.shellcheck,
+  lint.hadolint,
 }
 
 null_ls.setup {

@@ -74,6 +74,9 @@ local plugins = {
         "rustfmt",
         "stylua",
         "yamlfmt",
+
+        -- Linter
+        "hadolint",
       },
     },
   },
