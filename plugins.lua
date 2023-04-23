@@ -73,6 +73,7 @@ local plugins = {
         -- Formater
         "rustfmt",
         "stylua",
+        "yamlfmt",
       },
     },
   },

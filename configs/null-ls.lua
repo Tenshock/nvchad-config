@@ -5,6 +5,9 @@ local lint = null_ls.builtins.diagnostics
 
 local sources = {
   formatting.stylua,
+  formatting.yamlfmt.with {
+    args = { "-formatter", "retain_line_breaks=true", "-" },
+  },
   formatting.rustfmt.with {
     extra_args = function(params)
       local Path = require "plenary.path"
