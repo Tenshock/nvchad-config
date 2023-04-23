@@ -47,6 +47,7 @@ local plugins = {
           },
         },
       },
+      on_attach = require("custom.configs.nvim-tree"),
     },
   },
   {
