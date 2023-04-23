@@ -12,8 +12,8 @@ M.controls = {
     step_into = "",
     step_out = "",
     step_over = "",
-    terminate = ""
-  }
+    terminate = "",
+  },
 }
 
 M.element_mappings = {}
@@ -23,8 +23,8 @@ M.expand_lines = true
 M.floating = {
   border = "single",
   mappings = {
-    close = { "q", "<Esc>" }
-  }
+    close = { "q", "<Esc>" },
+  },
 }
 
 M.force_buffers = true
@@ -32,7 +32,7 @@ M.force_buffers = true
 M.icons = {
   collapsed = "",
   current_frame = "",
-  expanded = ""
+  expanded = "",
 }
 
 M.layouts = {
@@ -40,38 +40,38 @@ M.layouts = {
     elements = {
       {
         id = "scopes",
-        size = 0.25
+        size = 0.25,
       },
       {
         id = "breakpoints",
-        size = 0.25
+        size = 0.25,
       },
       {
         id = "stacks",
-        size = 0.25
+        size = 0.25,
       },
       {
         id = "watches",
-        size = 0.25
-      }
+        size = 0.25,
+      },
     },
     position = "left",
-    size = 40
+    size = 40,
   },
   {
     elements = {
       {
         id = "repl",
-        size = 0.5
+        size = 0.5,
       },
       {
         id = "console",
-        size = 0.5
-      }
+        size = 0.5,
+      },
     },
     position = "bottom",
-    size = 10
-  }
+    size = 10,
+  },
 }
 
 M.mappings = {
@@ -80,12 +80,12 @@ M.mappings = {
   open = "o",
   remove = "d",
   repl = "r",
-  toggle = "t"
+  toggle = "t",
 }
 
 M.render = {
   indent = 1,
-  max_value_lines = 100
+  max_value_lines = 100,
 }
 
 return M

@@ -1,12 +1,12 @@
 local M = {}
 
 M.general = {
-n = {
-  ["<leader>tz"] = { "<cmd> :tabnext <CR>", "next tab"},
-  ["<leader>ta"] = { "<cmd> :tabprev <CR>", "previous tab"},
-  ["<leader>tt"] = { "<cmd> :tabnew <CR>", "new tab"},
-  ["<leader>tw"] = { "<cmd> :tabclose <CR>", "close tab"},
-  }
+  n = {
+    ["<leader>tz"] = { "<cmd> :tabnext <CR>", "next tab" },
+    ["<leader>ta"] = { "<cmd> :tabprev <CR>", "previous tab" },
+    ["<leader>tt"] = { "<cmd> :tabnew <CR>", "new tab" },
+    ["<leader>tw"] = { "<cmd> :tabclose <CR>", "close tab" },
+  },
 }
 
 M.dapui = {

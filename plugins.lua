@@ -17,7 +17,7 @@ local plugins = {
         "markdown_inline", -- experimental, use "markdown" if issues
         "yaml",
         "toml",
-        "json"
+        "json",
       },
     },
   },
@@ -32,7 +32,7 @@ local plugins = {
     config = function()
       require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
-    end
+    end,
   },
   {
     "nvim-tree/nvim-tree.lua",
@@ -53,7 +53,7 @@ local plugins = {
           },
         },
       },
-      on_attach = require("custom.configs.nvim-tree"),
+      on_attach = require "custom.configs.nvim-tree",
     },
   },
   {
@@ -72,6 +72,7 @@ local plugins = {
 
         -- Formater
         "rustfmt",
+        "stylua",
       },
     },
   },
@@ -93,8 +94,8 @@ local plugins = {
   {
     -- When the plugin load, it conflict with the lsp default conf. Hence, disabling lsp capabilities in the place of rust-tools ones
     "simrat39/rust-tools.nvim",
-    dependencies = {"mfussenegger/nvim-dap", "rcarriga/nvim-dap-ui"},
-    cmd = {"RustDebuggables"},
+    dependencies = { "mfussenegger/nvim-dap", "rcarriga/nvim-dap-ui" },
+    cmd = { "RustDebuggables" },
     opts = function()
       local extension_path = vim.env.HOME .. "/.local/share/nvim/mason/packages/codelldb/extension/"
       local codelldb_path = extension_path .. "adapter/codelldb"

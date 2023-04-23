@@ -1,7 +1,6 @@
 local opt = vim.opt
 
 local function open_nvim_tree(data)
-
   -- buffer is a directory
   local directory = vim.fn.isdirectory(data.file) == 1
 
