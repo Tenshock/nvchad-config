@@ -109,6 +109,10 @@ local plugins = {
       }
     end,
   },
+  {
+    "kdheepak/lazygit.nvim",
+    cmd = { "LazyGit" },
+  },
 }
 
 return plugins

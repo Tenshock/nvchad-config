@@ -20,4 +20,10 @@ M.dapui = {
   },
 }
 
+M.lazygit = {
+  n = {
+    ["<leader>gg"] = { "<cmd> :LazyGit <CR>", "open LazyGit" },
+  },
+}
+
 return M
