@@ -65,7 +65,7 @@ local plugins = {
         "marksman",
         "rust-analyzer",
         "yaml-language-server",
-        "jdtls",
+        "jdtls", -- or try "java-language-server",
 
         -- DAP
         "codelldb",
@@ -74,6 +74,7 @@ local plugins = {
         "rustfmt",
         "stylua",
         "yamlfmt",
+        "google-java-format",
 
         -- Linter
         "hadolint",

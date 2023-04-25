@@ -5,6 +5,7 @@ local lint = null_ls.builtins.diagnostics
 
 local sources = {
   formatting.stylua,
+  formatting.google_java_format,
   formatting.yamlfmt.with {
     args = { "-formatter", "retain_line_breaks=true", "-" },
   },
