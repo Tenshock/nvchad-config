@@ -10,6 +10,7 @@ local servers_default = {
   "jdtls", -- or try "java-language-server",
   "rust_analyzer",
   "yamlls",
+  "tsserver",
 }
 
 for _, lsp in ipairs(servers_default) do

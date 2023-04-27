@@ -12,6 +12,7 @@ local plugins = {
         -- dev languages
         "rust",
         "java",
+        "typescript",
 
         -- templating, markup languages
         "markdown_inline", -- experimental, use "markdown" if issues
@@ -66,6 +67,7 @@ local plugins = {
         "rust-analyzer",
         "yaml-language-server",
         "jdtls", -- or try "java-language-server",
+        "typescript-language-server",
 
         -- DAP
         "codelldb",
@@ -75,9 +77,11 @@ local plugins = {
         "stylua",
         "yamlfmt",
         "google-java-format",
+        "prettierd",
 
         -- Linter
         "hadolint",
+        "eslint_d",
       },
     },
   },
