@@ -1,5 +1,6 @@
 local plugins = {
   {
+    -- https://github.com/nvim-treesitter/nvim-treesitter#supported-languages
     -- :TSInstallInfo  - List information about currently installed parsers
     -- :TSUpdate       - Update parsers
     -- :h nvim-treesitter-commands - list all available commands
