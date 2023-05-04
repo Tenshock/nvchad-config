@@ -29,6 +29,7 @@ local plugins = {
       "jose-elias-alvarez/null-ls.nvim",
       config = function()
         require "custom.configs.null-ls"
+        require "custom.configs.rust-tools"
       end,
     },
     config = function()
@@ -74,7 +75,6 @@ local plugins = {
         "codelldb",
 
         -- Formater
-        "rustfmt",
         "stylua",
         "yamlfmt",
         "google-java-format",
@@ -93,9 +93,6 @@ local plugins = {
       "DapToggleRepl",
       "DapContinue",
     },
-    config = function()
-      require "custom.configs.nvimdap"
-    end,
   },
   {
     "rcarriga/nvim-dap-ui",
@@ -104,20 +101,8 @@ local plugins = {
       require("dapui").setup(lua_conf)
     end,
   },
-  {
-    -- When the plugin load, it conflict with the lsp default conf. Hence, disabling lsp capabilities in the place of rust-tools ones
-    "simrat39/rust-tools.nvim",
-    dependencies = { "mfussenegger/nvim-dap", "rcarriga/nvim-dap-ui" },
-    cmd = { "RustDebuggables" },
-    opts = function()
-      local extension_path = vim.env.HOME .. "/.local/share/nvim/mason/packages/codelldb/extension/"
-      local codelldb_path = extension_path .. "adapter/codelldb"
-      local liblldb_path = extension_path .. "lldb/lib/liblldb.so"
-      return {
-        dap = { adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path) },
-      }
-    end,
-  },
+  "simrat39/rust-tools.nvim",
+  { "rust-lang/rust.vim", lazy = false },
   {
     "kdheepak/lazygit.nvim",
     cmd = { "LazyGit" },

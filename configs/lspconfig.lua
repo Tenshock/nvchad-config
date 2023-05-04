@@ -4,11 +4,11 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require "lspconfig"
 
 -- Check https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+-- Custom languages: https://github.com/neovim/nvim-lspconfig/wiki/Language-specific-plugins
 local servers_default = {
   "lua_ls",
   "marksman",
   "jdtls", -- or try "java-language-server",
-  "rust_analyzer",
   "yamlls",
   "tsserver",
 }

@@ -1,5 +1,4 @@
 local opt = vim.opt
-local api = vim.api
 
 local function open_nvim_tree(data)
   -- buffer is a directory
