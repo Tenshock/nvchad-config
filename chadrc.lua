@@ -2,6 +2,7 @@ local M = {}
 
 M.ui = {
   theme = "github_dark",
+  lsp_semantic_tokens = true,
   statusline = {
     theme = "minimal",
     separator_style = "block",
