@@ -9,8 +9,8 @@ local servers_default = {
   "marksman",
   "jdtls", -- or try "java-language-server",
   "rust_analyzer",
-  "yamlls",
   "tsserver",
+  "sqlls",
 }
 
 for _, lsp in ipairs(servers_default) do

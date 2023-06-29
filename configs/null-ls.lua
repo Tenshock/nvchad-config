@@ -32,6 +32,9 @@ local sources = {
 
   lint.shellcheck,
   lint.hadolint,
+  lint.sqlfluff.with {
+    extra_args = { "--dialect", "postgres" }
+  },
 
   code_actions.eslint_d,
 }
